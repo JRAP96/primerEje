@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="abuelo" class="container-fluid">
+        <h3 id="titT100">La Tabla de 100 números</h3>
+        <h5 id="titT">Vas a practicar el conteo. Es muy importante que practiques contar de 1 en 1 y de 10 en 10.<br><br><span id="objT">Objetivo: </span>Identificar correctamente a los números en la Tabla del 1 al 100.<br> Y contar las cantidades indicas apartir del número original. <br><br> Da click en los botones Parte 1,2,3 y 4 y sigue las intrucciones.<br> Muevete con los botones en las diferentes direcciones para cumplir los objetivos.<br><br></h5>
+        <div id="padre" class="row">
+            <div id="hijo1" class="col-12 col-lg-7">
+                <div id="contenedorCanvas">
+                    <canvas id="canvas1" width="400" height="400">
+                        Tu navegador no soporta canvas
+                    </canvas>
+                    <div class="eleccion">
+                        <button type="button" id='primera' class="btn btn-outline-dark">Parte 1</button>
+                        <button type="button" id='segunda' class="btn btn-outline-dark">Parte 2</button>
+                        <button type="button" id='tercera' class="btn btn-outline-dark">Parte 3</button>
+                        <button type="button" id='cuarta' class="btn btn-outline-dark">Parte 4</button>
+                    </div>
+                </div>
+                <div id="botones" class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-lg-2 col-1"">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" id='bt1' class="btn btn-outline-dark boton">↑ Resta 10</button>
+                        </div>
+                        <div class="col col-lg-2 col-1"">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <button type="button" id='bt4' class="btn btn-outline-dark boton">← Resta 1</button>
+                        </div>
+                        <div class="col col-lg-1 col-1">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" id='bt3' class="btn btn-outline-dark boton">Suma 1 →</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col col-lg-2 col-1"">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" id='bt2' class="btn btn-outline-dark boton">Suma 10 ↓</button>
+                        </div>
+                        <div class="col col-lg-2 col-1"">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="hijo2" class="col-12 col-lg-5">
+                <label id="instruccion" class="texto textoBorrable">Aquí sabrás qué hacer: </label>
+                <div id="hijo21" class="texto textoBorrable"></div>
+                <div id="hijo22" class="textoBorrable"></div>
+                <div id="hijo23" class="textoBorrable"></div>
+                <div id="hijo24" class="textoBorrable"></div>
+                <div id="hijo25" class="textoBorrable"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/acciones2.js"></script>
+</body>
+</html>

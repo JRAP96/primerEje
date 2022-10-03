@@ -1,0 +1,86 @@
+.titT{
+    margin: 20px;
+    color: blue;
+    padding-left: 20px;
+}
+.tit{
+    margin: 20px;
+    color: green;
+    padding-left: 20px;
+}
+.accordion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    .accordion-item{
+        background-color: transparent;
+    }
+#enun1,#enun{
+    margin: 15px;
+    margin-bottom: 20px;
+}
+#contenedorTabla,#contenedorTabla1,#contenedorTabla2{
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.table.table-success.table-bordered.border-primary.tb,.tb1{
+    width: 230px;
+}   
+#retro,#retro1{
+    width: 200px;
+}
+    #sumafx,#sumafy,#sumafz{
+        margin-bottom: 40px;
+    }
+    #operacion2,#operacion3{
+        text-align: center;
+        margin-bottom: 0px;
+        font-size: 2rem;
+    }
+    .ins{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .ent,.ent1,.ent2,.parrs{
+        border: 0;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 2px solid green;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    #iR{
+        text-align: left;
+        font-size: 1rem;
+    }
+        #escaleras{
+            width: 80%;
+            margin: auto;
+            text-align: left;
+            font-size: 1rem;
+        }
+        .iR1{
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: blue;
+        }
+    #anadirBoton,#anadirBoton1{
+        height: 50%;
+    }
+    .btn-sm{
+        border-radius: 20px;
+    }
+
+@media (max-width:400px){
+    #contenedorTabla{
+        width: 100%;
+    }
+}

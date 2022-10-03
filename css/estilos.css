@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Titulo */
+    #imagen{
+        height: auto;
+    }
+    #texto{
+        height: 40vw;
+    }
+        #texto1{
+            padding-left: 1vw;
+            padding-right: 5vw;
+        }
+#offcanvasExample{
+    background-color: lightseagreen;
+    opacity: 0.9;
+}
+    .offcanvas-body{
+        padding-left: 5vw;
+    }
+#plataforma{
+    height: auto;
+}
+img{
+    width: 100%;
+}
+/* footer */
+#footer{
+    height: auto;
+    background-color: white;
+}
+    #footerTexto{
+        margin-top: 2vw;
+        padding-top: 2vw;
+        border-top: 2px blue solid;
+    }
+    #footerIconos{
+        margin-top: 2vw;
+        padding-top: 2vw;
+        border-top: 2px blue solid;
+        text-align: center;
+    }
+#padre{
+    height: 50px;
+}

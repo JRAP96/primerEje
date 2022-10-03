@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconos/all.css">
+    <link rel="stylesheet" href="css/iconos/fontawesome.css">
+    <link rel="stylesheet" href="css/iconos/solid.css">
+    <link rel="stylesheet" href="css/iconos/brands.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Plataforma Digital ABN - Primer Eje</title>
+</head>
+<body>
+    <!-- Se quedara el mismo header en toda la plataforma y cambiara el contenido del body. El header tiene una barra de navegacion que se contrae, muestra los enlaces a otros otras paginas y enlaces a las propias actividades -->
+    <header>
+        <div id="titulo" class="row container-fluid">
+            <div id="imagen" class="col-ms-12 col-md-5">
+                <a href="index.html">
+                    <img src="img/logo2.png" class="img-fluid" alt="Logo ABN">
+                </a>
+            </div>
+            <div id="texto" class="col-ms-12 col-md-7 d-flex align-items-center">
+                <p id="texto1" class="fs-1 text-end fw-bold text-lg-center">Plataforma Digital de los Algoritmos ABN</p>
+            </div>
+        </div>
+
+        <nav id="navegacion" class="navbar navbar-expand-md navbar-dark bg-info">
+            <div class="container-fluid">
+                <a id="btnavbar" class="navbar-brand fs-4 badge rounded-pill bg-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Índice</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#"><i class="fa-solid fa-user"></i> Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">Primer Eje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-6 fw-bold" aria-current="page" href="#">Segundo Eje</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input id="form1" class="form-control me-2" type="search" placeholder="¿Qué operación buscas?" aria-label="Search">
+                        <button id="boton1" class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title text-light" id="offcanvasExampleLabel">Índice</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="fs-4 text-light">
+                Actividades del Primer Eje:
+                </div><br><br>
+                <button id="act1" type="button" class="btn btn-outline-light btn-lg acts" data-bs-dismiss="offcanvas" aria-label="Close">Actividad 1</button><br><br>
+                <button id="act2" type="button" class="btn btn-outline-light btn-lg acts" data-bs-dismiss="offcanvas" aria-label="Close">Actividad 2</button><br><br>
+                <button id="act3" type="button" class="btn btn-outline-light btn-lg acts" data-bs-dismiss="offcanvas" aria-label="Close">Actividad 3</button><br><br>
+                <button id="act4" type="button" class="btn btn-outline-light btn-lg acts" data-bs-dismiss="offcanvas" aria-label="Close">Actividad 4</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main id="plataforma" class="container-fluid bg-info">
+        <img src="img/BannerPlataforma.png" alt="Banner">
+    </main>
+
+    <footer id="footer" class="container-fluid">
+        <div class="container">
+            <div id="footerTexto" class="row">
+                <div id="footerimg1" class="col-6 col-md-2">
+                    <img src="img/logocinves.png" alt="Cinvestav">
+                </div>
+                <div id="footerimg2" class="col-6 col-md-2">
+                    <img src="img/logodme.jpg" alt="DME">
+                </div>
+                <div id="footerteorico" class="col-6 col-md-4">
+                    <p class="fw-light">Trabajo Teórico</p>
+                    <p class="fw-light">Referencias</p>
+                    <p class="fw-light">Páginas amigas</p>
+                    <p class="fw-light">Otros enlaces</p>
+                </div>
+                <div id="footernosotros" class="col-6 col-md-4">
+                    <p class="fw-light">Nosotros</p>
+                    <p class="fw-light">CINVESTAV - DME</p>
+                    <p class="fw-light">Contacto</p>
+                </div>
+            </div>
+        </div>
+        <div id="footerIconos" class="container-fluid">
+            <i class="fa fa-home"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-drive"></i>
+            <i class="fa-brands fa-blogger"></i>
+            <p class="fw-light">Cinvestav - DME - Tecnologías Digitales</p>
+        </div>
+    </footer>
+
+    <script src="js/enlaces.js"></script>
+    <script src="js/busqueda.js"></script>
+</body>
+</html>

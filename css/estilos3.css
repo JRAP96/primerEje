@@ -1,0 +1,154 @@
+div.row{
+    align-items: center;
+}
+#padre1{
+    background-color: transparent;
+}
+    #containerPadre1{
+        border-radius: 20px;
+        /*background-color: antiquewhite;*/
+        height: 500px;
+        width: 300px;
+        background: url('../img/img2/Tree.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+        .rowhijas{
+            align-items: center;
+        }
+            div.col{
+                text-align: center;
+            }
+            #titT100{
+                color: blue;
+                margin: 2rem;
+                margin-top: 0px;
+                padding-top: 2rem;
+            }
+        input.inputNumber{
+            margin: 0 auto;
+            text-align: center;
+            margin: 65px 0px;
+        }
+        .inputNumbern{
+            width: 60px;
+            padding: 5px;
+            font-size: 25px;
+            border-width: 4px;
+            border-color: #cccccc;
+            background-color: #e8f3f0;
+            color: #000000;
+            border-style: hidden;
+            border-radius: 17px;
+            box-shadow: -1px 7px 8px rgba(66,66,66,.75);
+        }
+        .inputNumberx{
+            width: 40px;
+            padding: 5px;
+            font-size: 15px;
+            border-width: 4px;
+            border-color: #cccccc;
+            background-color: #e8f3f0;
+            color: #000000;
+            border-style: hidden;
+            border-radius: 17px;
+            box-shadow: -1px 7px 8px rgba(66,66,66,.75);
+        }
+        #original{
+            font-weight: bold;
+            font-size: 2.5vw;
+        }
+#padre2{
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+    #ca2{
+        border-bottom: 2px blue solid;
+        margin-bottom: 1rem;
+    }
+    #ca4{
+        border-top: 2px blue solid;
+        margin-top: 1rem;
+    }
+    .tit{
+        margin-top: 2vw;
+        text-align: center;
+        font-size: 3vw;
+        font-weight: bold;
+        color: blue;
+    }
+    #op23{
+        text-align: center;
+        font-size: 2vw;
+        color: blue;
+    }
+    .father{
+        position: relative;
+        margin: 1vw;
+        height: 223px;
+        width: 110px;
+    }
+        .cont1{
+            height: 223px;
+            width: 110px;
+            position: absolute;
+            background: url('../img/img3/flaskBueno.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .cont2{
+            position: absolute;
+            background-color: aquamarine;
+            height: 0px;
+            width: 90px;
+            left: 10px;
+            right: 0;
+            margin: auto 0;
+            bottom: 10px;
+        }
+    .father2{
+        position: relative;
+        margin: 1vw;
+        height: 110px;
+        width: 50px;
+    }
+        .cont3{
+            height: 110px;
+            width: 50px;
+            position: absolute;
+            background: url('../img/img3/flaskBueno.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .cont4{
+            position: absolute;
+            background-color: aquamarine;
+            height: 0px;
+            width: 40px;
+            left: 5px;
+            right: 0;
+            margin: auto 0;
+            bottom: 5px;
+        }
+    label{
+        width: auto;
+        margin: 0 auto;
+    }
+
+@media (max-width: 425px) {
+    .tit,#op23{
+        font-size: 6vw;
+    }
+    #containerPadre1{
+        background-color: bisque;
+    }
+        input.inputNumber{
+            font-size: 3vw;
+        }
+        #original{
+            font-size: 5vw;
+        }
+}

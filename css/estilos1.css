@@ -1,0 +1,131 @@
+.row{
+    justify-content: space-between;
+}
+#padre{
+    height: auto;
+}
+    #instruction{
+        width: 60%;
+        font-size: 1.25rem;
+    }
+    .opc{
+        margin: 0px 15px 15px 15px;
+    }
+        #primerP{
+            font-weight: bold;
+            font-size: 1.75rem;
+            color: blue;
+        }
+    #hijo1{
+        height: auto;
+        background-color: transparent;
+    }
+        .moneda1{
+            margin: 10px;
+            width: 75%;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50px;
+            border: 2px orange solid;
+            padding: 5px;
+        }
+    #hijo2{
+        height: auto;
+        background-color: transparent;
+    }
+    #hijo3{
+        height: 550px;
+        /*background-color: rgba(144, 238, 144, 0.5);*/
+        background-color: transparent;
+        border-radius: 20px;
+    }
+        #caben{
+            text-align: center;
+        }
+        #nieto3{
+            position: relative;
+            height: 80%;
+            width: 80%;
+            background-color: transparent;
+            margin: 0 auto;
+            border-radius: 30px;
+        }
+        #nieto31{
+            position: absolute;
+            height: 440px;
+            width: 320px;
+            left: 0;
+            right: 0;
+            margin: auto 0;
+            bottom: 0;
+            border-radius: inherit;
+            /*background: url('../img/img1/cylinderB.svg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;*/
+        }
+        #nieto32{
+            position: absolute;
+            height: 440px;
+            width: 320px;
+            left: 0;
+            right: 0;
+            margin: auto 0;
+            bottom: 0;
+            border-radius: inherit;
+            padding: 5px;
+            /*border: 5px solid black;*/
+            /*background-image: url('../img/img1/bgact1.png');*/
+            background: url('../img/img1/cylinderGood.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: antiquewhite;
+        }
+    #hijo4{
+        height: auto;
+        /*background-color: rgba(144, 238, 144, 0.5);*/
+        background-color: transparent;
+        border-radius: 20px;
+    }
+        #titSuma{
+            color: brown;
+        }
+        .textVuelo, .numberVuelo{
+            display: inline;
+            font-size: 2vw;
+            text-align: center;
+        }
+        .numberVuelo{
+            border-radius: 20px;
+            border: brown solid;
+            background-color: transparent;
+            text-align: center;
+            padding: 5px;
+        }
+        .sumasVuelo{
+            font-size: 1vw;
+        }
+@media (max-width: 1200px) {
+    #hijo4{
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+#instruction{
+    width: 70%;
+    text-align: center;
+}
+#hijo4{
+    margin-top: 2vw;
+    height: auto;
+    padding-left: 5%;
+}
+    .textVuelo, .numberVuelo{
+        font-size: 5vw;
+    }
+    .sumasVuelo{
+        font-size: 2vw;
+    }
+}

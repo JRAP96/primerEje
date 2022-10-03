@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos4.css">
+    <title>Actividad 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="titT">Restas y Sumas sin prestamos ni llevadas</h1>
+            <div class="col">
+                <h2 class="tit">Una manera distinta de Restar</h2>
+                <p id="iR"><span class="iR1">Qué hacer: </span> Para resolver el problema debes restar mediante los algoritmos ABN, para esto cuentas con los siguientes primeros formatos.<br>Las cantidades añadidas o quitadas que vas eligiendo en cada formato en realidad son la diferencia entre el minuendo y el sustraendo, es decir el valor de la <span class="iR1">Resta</span>.</p>
+                <div class="accordion" id="accordion1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                        <button id="ea" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span class="iR1">Escalera Ascendente: </span>
+                            <p id="escaleras">Debes partir del número menor de la resta (sustraendo) y añadir las cantidades que consideres adecuadas hasta igualar al número mayor de la resta (minuendo).</p>
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                        <div id="ab" class="accordion-body">
+                            <h5 id="enun">Una bandeja de papel de una impresora tiene <span id="nunSus"></span> hojas blancas al inicio del día. Los empleados de la oficina le agregaron algunas hojas y al final del día la bandeja cuenta con <span id="nunMin"></span> hojas blancas. ¿Cuántas hojas le han agregado?</h5>
+                            <div id="contenedorTabla">
+                                <table class="table table-success table-bordered border-primary tb">
+                                    <tbody id="tablaBody">
+                                        <tr id="operacion">
+                                            <th colspan="2"><p class="operacionx"></p></th>
+                                        </tr>
+                                        <tr id="encabezado">
+                                            <th class="ins">Añado</th>
+                                            <th class="ins">Llego a</th>
+                                        </tr>
+                                        <tr class="prov">
+                                            <td>
+                                                <div class="form-floating mb-3 x">
+                                                    <input type="text" class="form-control ent" id="1" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="anado">Hojas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr" id="llegoa1">...</p>
+                                                <button id="1" type="button" class="btn btn-secondary btn-sm ori">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="prov">
+                                            <td>
+                                                <div class="form-floating mb-3 x">
+                                                    <input type="text" class="form-control ent" id="2" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="2">Hojas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr" id="llegoa2">...</p>
+                                                <button id="2" type="button" class="btn btn-secondary btn-sm ori">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr class="prov">
+                                            <td>
+                                                <div class="form-floating mb-3 x">
+                                                    <input type="text" class="form-control ent" id="3" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="3">Hojas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr" id="llegoa3">...</p>
+                                                <button id="3" type="button" class="btn btn-secondary btn-sm ori">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div id="retro">
+                                    <div id="sumafx"></div>
+                                    <button type="button" class="btn btn-primary" id="anadirBoton" title="¿No te alcanza el espacio? Da click aquí y continua tus operaciones">Añadir fila</button>
+                                    <button type="button" class="btn btn-success" id="replay">Bien hecho, Comenzar</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                        <button  id="ed" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="iR1">Escalera Descendente: </span>
+                            <p id="escaleras">Debes partir del número mayor de la resta (minuendo) y quitar/consumir las cantidades que consideres adecuadas hasta igualar al número menor de la resta (sustraendo).</p>
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
+                        <div id="ab1" class="accordion-body">
+                            <h5 id="enun1">Al inicio del día la bandeja de papel de una impresora tiene <span id="nunSus1"></span> hojas blancas. Los empleados de la oficina usaron varias veces la impresora, al terminar el día la bandeja cuenta con <span id="nunMin1"></span> hojas blancas. ¿Cuántas hojas consumieron los empleados?</h5>
+                            <div id="contenedorTabla1">
+                                <table class="table table-success table-bordered border-primary tb1">
+                                    <tbody id="tablaBody1">
+                                        <tr id="operacion1">
+                                            <th colspan="2"><p class="operacion2"></p></th>
+                                        </tr>
+                                        <tr id="encabezado">
+                                            <th class="ins">Consumo</th>
+                                            <th class="ins">Llego a</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-floating mb-3 x1">
+                                                    <input type="text" class="form-control ent1" id="1" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="1">Hojas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr1" id="llegoax1">...</p>
+                                                <button id="1" type="button" class="btn btn-secondary btn-sm ori1">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-floating mb-3 x1">
+                                                    <input type="text" class="form-control ent1" id="2" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="2">Hojas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr1" id="llegoax2">...</p>
+                                                <button id="2" type="button" class="btn btn-secondary btn-sm ori1">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-floating mb-3 x1">
+                                                    <input type="text" class="form-control ent1" id="3" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="3">Hojas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr1" id="llegoax3">...</p>
+                                                <button id="3" type="button" class="btn btn-secondary btn-sm ori1">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div id="retro1">
+                                    <div id="sumafy"></div>
+                                    <button type="button" class="btn btn-primary" id="anadirBoton1" title="¿No te alcanza el espacio? Da click aquí y continua tus operaciones">Añadir fila</button>
+                                    <button type="button" class="btn btn-success" id="replay1">Bien hecho, Comenzar</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="tit">Una manera distinta de Sumar</h2>
+                <p id="iR"><span class="iR1">Qué hacer: </span> Resuelve el problema y suma mediante los algoritmos ABN, para esto presentamos el siguiente formato.<br>
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                        <button  id="fs" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <span class="iR1">Suma por tranferencia: </span>
+                            <p id="escaleras">Debes ir moviendo las cantidades que consideres adecuadas de un sumando al otro (en este caso del número menor al mayor).<br> En la columna "añado" coloca la cantidad que quieras mover del número menor al mayor y en la columna "suma" coloca el valor de la <span class="iR1">suma</span> de ambos. Mientras que en la columna "queda" visualizaras lo que va sobrando del sumando menor que esta siendo descompuesto.</p>
+                        </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordion2">
+                        <div class="accordion-body">
+                            <h5 id="enun1">Sara tiene <span id="nunMin2"></span> canicas de colores y su madre le regala <span id="nunSus2"></span> ¿Cuántas canicas tiene ahora?</h5>
+                            <div id="contenedorTabla2">
+                                <table class="table table-success table-bordered border-primary tb2">
+                                    <tbody id="tablaBody2">
+                                        <tr id="operacion1">
+                                            <th colspan="3"><p class="operacion3"></p></th>
+                                        </tr>
+                                        <tr id="encabezado">
+                                            <th class="ins">Añado</th>
+                                            <th class="ins">Queda</th>
+                                            <th class="ins">Suma</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-floating mb-3 x2">
+                                                    <input type="text" class="form-control ent2" id="1" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="1">Canicas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr2" id="llegoam1">...</p>
+                                            </td>
+                                            <td>
+                                                <div class="form-floating mb-3 x2">
+                                                    <input type="text" class="form-control parrs" id="llegoas1" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="llegoas1">Suma canicas</label>
+                                                </div>
+                                                <!-- <p class="parrs" id="llegoas1">...</p> -->
+                                                <button id="1" type="button" class="btn btn-secondary btn-sm ori2">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-floating mb-3 x2">
+                                                    <input type="text" class="form-control ent2" id="2" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="2">Canicas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr2" id="llegoam2">...</p>
+                                            </td>
+                                            <td>
+                                                <div class="form-floating mb-3 x2">
+                                                    <input type="text" class="form-control parrs" id="llegoas2" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="llegoas2">Suma canicas</label>
+                                                </div>
+                                                <!-- <p class="parrs" id="llegoas2">...</p> -->
+                                                <button id="2" type="button" class="btn btn-secondary btn-sm ori2">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="form-floating mb-3 x2">
+                                                    <input type="text" class="form-control ent2" id="3" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="3">Canicas</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p class="parr2" id="llegoam3">...</p>
+                                            </td>
+                                            <td>
+                                                <div class="form-floating mb-3 x2">
+                                                    <input type="text" class="form-control parrs" id="llegoas3" onkeypress="return event.charCode > 43 && event.charCode <= 61 && event.charCode != 44 && event.charCode != 45 && event.charCode != 46 && event.charCode != 47 && event.charCode != 58 && event.charCode != 59 && event.charCode != 60">
+                                                    <label for="llegoas3">Suma canicas</label>
+                                                </div>
+                                                <!-- <p class="parrs" id="llegoas3">...</p> -->
+                                                <button id="3" type="button" class="btn btn-secondary btn-sm ori2">Eliminar</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div id="retro2">
+                                    <div id="sumafz"></div>
+                                    <button type="button" class="btn btn-primary" id="anadirBoton2" title="¿No te alcanza el espacio? Da click aquí y continua tus operaciones">Añadir fila</button>
+                                    <button type="button" class="btn btn-success" id="replay2">Bien hecho, Comenzar</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/acciones4.js"></script>
+</body>
+</html>

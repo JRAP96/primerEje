@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="stylesheet" href="css/estilos1.css?v=<?php echo(rand()); ?>">
+</head>
+<body>
+    <div id="abuelo" class="container-fluid">
+        <p id="instruction"><span id="primerP">Portamonedas: </span>Ayudanos a llenar el portamonedas con la cantidad de monedas indicada, para eso cuentas con los conjuntos de monedas que se te muestran. <br><br> <strong>Para empezar da click en los botones a continuacion.</strong> Debes arrastrar y soltar solamente dos conjuntos para llenarlo. Cada moneda vale 1 unidad.</p>
+        <button id="parte1" type="button" class="btn btn-outline-primary btn-lg opc">Primera Parte</button>
+        <button id="parte2" type="button" class="btn btn-outline-primary btn-lg opc">Segunda Parte</button>
+        <div id="padre" class="row">
+            <div id="hijo1" class="col-3 col-lg-2">
+                <img src="img/img1/1.png" alt="moneda de 1 unidad" id="1" class="moneda1">
+                <img src="img/img1/2.png" alt="moneda de 1 unidad" id="2" class="moneda1">
+                <img src="img/img1/3.png" alt="moneda de 1 unidad" id="3" class="moneda1">
+                <img src="img/img1/4.png" alt="moneda de 1 unidad" id="4" class="moneda1">
+                <img src="img/img1/5.png" alt="moneda de 1 unidad" id="5" class="moneda1">
+            </div>
+            <div id="hijo2" class="col-3 col-lg-2">
+                <img src="img/img1/6.png" alt="moneda de 1 unidad" id="6" class="moneda1">
+                <img src="img/img1/7.png" alt="moneda de 1 unidad" id="7" class="moneda1">
+                <img src="img/img1/8.png" alt="moneda de 1 unidad" id="8" class="moneda1">
+                <img src="img/img1/9.png" alt="moneda de 1 unidad" id="9" class="moneda1">
+                <img src="img/img1/10.png" alt="moneda de 1 unidad" id="10" class="moneda1">
+            </div>
+            <div id="hijo3" class="col-6 col-lg-4">
+                <h3 id="caben">Caben 5 monedas de 1</h3>
+                <div id="nieto3">
+                    <div id="nieto32"></div>
+                    <div id="nieto31"></div>
+                </div>
+            </div>
+            <div id="hijo4" class="col-12 col-lg-4">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/acciones1.js?v=<?php echo(rand());?>"></script>
+</body>
+
+</html>

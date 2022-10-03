@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos3.css">
+</head>
+
+    <div id="abuelo" class="container">
+        <div class="row">
+            <div id="padre1" class="col col-12 col-lg-7 col-xl-6">
+                <div>
+                    <h3 id="titT100">El árbol de los números - Ayudante de Laboratorio</h3>
+                    <p class="text-start fs-5"><b>Objetivo:</b> Al darle click en comenzar te aparecerá un número que indica cuantos mililitros de líquido químico debes llevar para tu experimento, para hacerlo debes distribuir esa cantidad en dos contenedores<br><b>¿Cuántos mililitros le deben caber a cada contenedor para que juntes esa cantidad del químico?.</b> Verifica si estas considerando correctamente las capacidades de los contenedores en la sección derecha.</p>
+                </div>
+                
+                <div id="containerPadre1" class="container">
+                    <div class="row rowhijas">
+                    <div class="col" >
+                        <button type="button" class="btn btn-primary" id="original"><span id="originalText">Comenzar</span></button>
+                    </div>
+                    </div>
+                    <div class="row rowhijas">
+                    <div class="col">
+                        <input class="inputNumber inputNumbern" type="number" name="n" id="n" min="2" max="100">
+                    </div>
+                    <div class="col">
+                        <input class="inputNumber inputNumbern" type="number" name="m" id="m" min="2" max="100">
+                    </div>
+                    </div>
+                    <div class="row rowhijas">
+                    <div class="col">
+                        <input class="inputNumber inputNumberx" type="number" name="w" id="w" min="1" max="100">
+                    </div>
+                    <div class="col">
+                        <input class="inputNumber inputNumberx" type="number" name="x" id="x" min="1" max="100">
+                    </div>
+                    <div class="col">
+                        <input class="inputNumber inputNumberx" type="number" name="y" id="y" min="1" max="100">
+                    </div>
+                    <div class="col">
+                        <input class="inputNumber inputNumberx" type="number" name="z" id="z" min="1" max="100">
+                    </div>
+                    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+                        <div class="toast-container bg-dark">
+                            <div id="liveToast1" class="toast" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <strong>FELICIDADES, LO LOGRASTE</strong>
+                                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    Has conseguido la cantidad de sustancia química solicitada correctamente distribuida.<br> Da click en el cuadro grande de color azul con el número para comenzar nuevamente.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="padre2" class="col col-12 col-lg-5 col-xl-6">
+                <div class="container">
+                    <div class="row">
+                    <div class="col" >
+                        <p class="tit" title="Registro del químico llenando contenedores de las capacidades especificadas.">Verificador de cantidades</p>
+                        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+                            <div class="toast-container bg-dark">
+                                <div id="liveToast" class="toast" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true">
+                                    <div class="toast-header">
+                                        <strong>Pasa a la segunda descomposición</strong>
+                                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Para poder transportar sin peligros la sustancia química tienes la posibilidad de elegir dos nuevos contenedores más pequeños por cada contenedor.<br> Da las capacidades de esos dos contenedores de modo que se llenen completamente y no sobre o falte líquido químico, deben ir forzosamente llenos.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row" id="ca2">
+                    <div class="col col-8">
+                        <label id="op1">Aquí podrás probar si el líquido que llevas en los contenedores es el que necesitas. A esta probeta le caben justo los mililitros necesarios de ese químico, verifica que se llene.</label>
+                    </div>
+                    <div class="col col-4">
+                        <div class="father">
+                            <div class="cont2" id="cont21">
+                            </div>
+                            <div class="cont1">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col col-12 col-lg-6" id="ca3">
+                            <div class="row">
+                                <div class="col col-8">
+                                    <label id="op21">Verifica tu segunda distribución del primer contenedor</label><br>
+                                </div>
+                                <div class="col col-4">
+                                    <div class="father2">
+                                        <div class="cont4" id="cont23">
+                                        </div>
+                                        <div class="cont3">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        <div class="col col-12 col-lg-6">
+                            <div class="row">
+                                <div class="col col-8">
+                                    <label id="op22">Verifica tu segunda distribución del segundo contenedor</label><br>
+                                </div>
+                                <div class="col col-4">
+                                    <div class="father2">
+                                        <div class="cont4" id="cont24">
+                                        </div>
+                                        <div class="cont3">
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="row" id="ca4">
+                    <div class="col col-8">
+                        <label id="op23">Distribución final del líquido químico</label>
+                    </div>
+                    <div class="col col-4">
+                        <div class="father">
+                            <div class="cont2" id="cont22">
+                            </div>
+                            <div class="cont1">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/acciones3.js"></script>
+
+</html>
