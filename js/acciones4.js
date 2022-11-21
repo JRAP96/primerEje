@@ -288,13 +288,13 @@ function escaleraD() {
                 sp = sp + 0;
             } else {
                 m = m + parseInt($('.ent1#'+i).val());
-                sp = sp + parseInt($('.ent1#'+i).val());
+                sp = sp - parseInt($('.ent1#'+i).val());
             }
             $('.ent1#'+i).closest('tr').remove();
             $('#spay'+i).remove();
         }
         $('#sumafy4').html(' - '+sp.toString());
-        $('.sumafy3').text(' = '+s.toString());
+        $('.sumafy3').text(' = '+m.toString());
         ct = ct-1; // Decrementamos el 'ultimo valor del contador ct que lleva la cuenta de las filas que se han agregado.
         $('.btn-sm.ori1').off('click',eliminarfil1);
     }
